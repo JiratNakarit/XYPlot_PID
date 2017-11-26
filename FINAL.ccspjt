@@ -1,0 +1,19 @@
+[PROJECT]
+Target=FINAL.hex
+Processor_Text=PIC24FJ48GA002
+CCSVersion=5.015
+Compiler=PCD
+[Target Data]
+FileList=FINAL.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\devices\;C:\Program Files (x86)\PICC\drivers\
+[FINAL.c]
+Type=4
+[mru-list]
+1=FINAL.c
+[Units]
+Count=3
+1=BITWISE_LIB
+2=CONTROL_PID
+3=EVENT_DRIVEN_CCS
+Link=1

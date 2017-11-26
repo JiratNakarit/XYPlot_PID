@@ -1,0 +1,8 @@
+>>> Warning 202 "CONTROL_PID.c" Line 118(5,6): Variable never used:   h
+>>> Warning 202 "CONTROL_PID.c" Line 126(5,6): Variable never used:   x
+>>> Warning 202 "CONTROL_PID.c" Line 126(7,8): Variable never used:   y
+>>> Warning 202 "CONTROL_PID.c" Line 131(24,34): Variable never used:   Tx1BuffPtr
+>>> Warning 202 "CONTROL_PID.c" Line 134(36,47): Variable never used:   Tx1FrameOut
+>>> Warning 202 "CONTROL_PID.c" Line 299(16,28): Variable never used:   sendTx1Count
+C:\Users\Teng_is_happy\Documents\Embeded Project\Final_Project\CONTROL_PID.o ===>  0 Errors,  6 Warnings.
+Build Successful.

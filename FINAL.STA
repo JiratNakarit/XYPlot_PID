@@ -1,0 +1,114 @@
+
+ROM used:   7598/33788 (22%)
+            7598/33788 (22%) including unused fragments
+
+            1.0 Average locations per line
+            3.4 Average locations per statement
+
+RAM used:   832/8192 (10%) at main() level
+            986/8192 (12%) worst case
+
+Stack size: 128
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+    4     0   0  $linker.c
+  154    24   1  BITWISE_LIB.c
+  144     0   0  BITWISE_LIB.h
+  107     0   0  CONFIG_PIC24.H
+  862     0   0  ..\..\..\..\..\Program Files (x86)\PICC\devices\24FJ48GA002.H
+ 1351   524  24  ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdlib.h
+   32     0   0  ..\..\..\..\..\Program Files (x86)\PICC\drivers\stddef.h
+  423     0   0  ..\..\..\..\..\Program Files (x86)\PICC\drivers\string.h
+   28     0   0  ..\..\..\..\..\Program Files (x86)\PICC\drivers\ctype.h
+   37     0   0  ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdio.h
+  326   134   6  ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdlibm.h
+   76    13   1  ..\..\..\..\..\Program Files (x86)\PICC\drivers\memmgmt.c
+  163     0   0  ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdint.h
+   32     0   0  BL_support.h
+   37     0   0  CDATPIC24.H
+  797   423  19  CONTROL_PID.c
+   86     0   0  CONTROL_PID.h
+  295     0   0  EVENT_DRIVEN_CCS.H
+  109     0   0  EVENT_TYPE_CCS.H
+ 2229   921  42  ..\..\..\..\..\Program Files (x86)\PICC\drivers\math.h
+  458   177   8  EVENT_DRIVEN_CCS.c
+----- -----
+ 7750  2216 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     34   0    8   129  4.6  strlen
+0    196   1    8             @MULFF
+0     74   0    2             @SITOF
+0    426   3    8             @ADDFF
+0    202   1    8             @DIVFF
+0    272   2    0             @MULFF64
+0    100   1    0             @SI64TOF64
+0    264   2    8             @DIVFF64
+0     36   0    9   150  3.6  create_node
+0     16   0    7    60  3.1  update_node
+0     52   0    7   180  4.5  insert_node_after
+0     46   0    7   192  3.8  remove_node
+0    126   1   13   705  9.2  traverse
+0    178   1   13   919 12.3  malloc
+0     66   0    9   380  6.3  free
+0    104   1    8             @FLT
+0     44   0    4             @SFTOI
+0     58   0    2             @ITOF
+0     86   1    0             @F64TOI64
+0    132   1    6  1169  4.0  drive_motor
+0    898   6   15  2456  7.0  control_position
+0    266   2    9   240  2.6  Encoder
+0     68   0    0             @F64TO48
+0    590   4    4  1313  7.3  main
+0    184   1    3  1684  4.4  HardwareInit
+0     20   0    0   193  2.3  GlobalVarInit
+0     44   0    0   212  4.9  DynamicMemInit
+0     34   0    0    94  2.5  UARTQueueInit
+0    504   3   23  2815  8.4  create_position_array
+0     24   0    0             @const1849
+0    246   2    0             @PRINTFD16_115200_5725_5724
+0     24   0    0             @const1853
+0     10   0    1    31  1.7  ConvertStr2Int
+0    182   1    6  1207 11.7  RDA1
+0     68   0    2   204  4.5  TBE1ISR
+0    170   1    0   477  4.2  Home
+0     52   0    0   104  2.1  Initial_Y_axis
+0     52   0    0   104  2.1  Initial_X_axis
+0     68   0    3   169  5.1  Encoder1_A
+0     70   0    3   183  5.6  Encoder1_B
+0     72   0    3   183  5.6  Encoder2_A
+0     74   0    3   183  5.6  Encoder2_B
+0    370   2    5   902  5.7  Run_Motor
+0     34   0    0    29  1.2  Run_Motor2
+0     62   0    9   218  3.7  QPtrXInit
+0    106   1   11   395  6.1  QPtrXPut
+0    106   1   13   421  6.8  QPtrXGet
+0     62   0    9   218  3.7  Q8UXInit
+0    100   1   13   398  6.3  Q8UXGet
+0     10   0    0    21  0.9  DisableIntr
+0      8   0    0    21  0.9  EnableIntr
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               36
+    Statements              2216
+    Comments                305
+    Volume (V)              31874
+    Difficulty (D)          177.9
+    Effort to implement (E) 5669352
+    Time to implement (T)   87 hours, 29 minutes
+    Est Delivered Bugs (B)  11
+    Cyclomatic Complexity   83
+    Maintainability (MI)    19
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00BFE     0  3072  
+00C00-00C02     4  0  
+00C04-00DFA   504  0  
+00DFC-083FA  7090  23118  
+
+
+

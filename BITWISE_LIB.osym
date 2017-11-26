@@ -1,0 +1,45 @@
+_RETURN_
+C1OUT
+C2OUT
+TX1IF
+_Randseed
+__DYNAMIC_HEAD
+
+Project Directory:
+    C:\Users\Teng_is_happy\Documents\Embeded Project\Final_Project\
+
+Project Files:
+    BITWISE_LIB.c                                           [28-ส.ค.-17 16:22  CRC=C9F547CD]
+    BITWISE_LIB.h                                           [09-ส.ค.-17 17:14  CRC=93B1E71D]
+    CONFIG_PIC24.H                                          [23-พ.ย.-17 13:55  CRC=C1654A97]
+    ..\..\..\..\..\Program Files (x86)\PICC\devices\24FJ48GA002.H [12-พ.ย.-13 14:36  CRC=2B092578]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdlib.h [08-มิ.ย.-11 14:39  CRC=0B6669CF]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\stddef.h [16-ก.ค.-10 09:27  CRC=897CEC6C]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\string.h [14-ก.ค.-11 10:13  CRC=23EDEC8F]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\ctype.h [03-ม.ค.-08 13:55  CRC=2D1F019F]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdio.h [31-ก.ค.-07 13:24  CRC=4E4534F4]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdlibm.h [24-ก.พ.-12 09:58  CRC=9523303D]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\memmgmt.c [24-ก.พ.-12 09:47  CRC=E82E24A3]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdint.h [30-ธ.ค.-08 09:01  CRC=9F7F640F]
+    BL_support.h                                            [05-ม.ค.-17 12:12  CRC=F46A39C9]
+    CDATPIC24.H                                             [25-ก.ค.-17 17:34  CRC=DDB9FE05]
+
+Source signature=4AFA0718
+
+Units:
+    BITWISE_LIB (main)
+
+Compiler Settings:
+    Processor:      PIC24FJ48GA002
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: SIGNED: 8,16,32
+    Float,Double:   32,64
+    Case Sensitive: Yes
+    Output file:    Relocatable
+
+Output Files:
+    Errors:      BITWISE_LIB.err
+    Object:      BITWISE_LIB.o
+    Symbols:     BITWISE_LIB.osym

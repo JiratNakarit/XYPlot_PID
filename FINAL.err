@@ -1,0 +1,5 @@
+>>> Warning 216 "C:\Users\Teng_is_happy\Documents\Embeded Project\Final_Project\$linker.c" Line 3(8,14): Interrupts disabled during call to prevent re-entrancy:  (malloc)
+>>> Warning 216 "C:\Users\Teng_is_happy\Documents\Embeded Project\Final_Project\$linker.c" Line 3(8,14): Interrupts disabled during call to prevent re-entrancy:  (free)
+      Memory usage:   ROM=22%      RAM=10% - 12%
+      0 Errors,  2 Warnings.
+Build Successful.

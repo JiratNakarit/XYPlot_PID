@@ -1,0 +1,314 @@
+W0      @SCRATCH
+W0L     _RETURN_
+W0 -W2  @ADDFF48.P1
+W0 -W1  @READ_ROM_MEMORY.P2
+W0      @PRINTFD16_115200_5725_5724.P3
+W0 -W2  @F48TO64.P4
+W0 -W1  @DIV3232B.P5
+W0 -W3  @FLT64.P6
+W0 -W1  @DIVFF.P7
+W0 -W1  @FLT.P8
+W0 -W3  @F64TOI64.P9
+W0 -W3  @MULFF64.P10
+W0 -W1  @SFTOI.P11
+W0 -W3  @SI64TOF64.P12
+W0 -W1  @DIVS3232A.P13
+W0 -W3  @DIVFF64.P14
+W0 -W2  @MULS4848.P15
+W0 -W3  @ADDFF64.P16
+W0 -W2  @DIVS4848.P17
+W0 -W3  @I64TOF48.P18
+W0 -W2  @FLT48.P19
+W0 -W1  @MUL3232.P20
+W0 -W2  @F48TOSI64.P21
+W0 -W1  @ADDFF.P22
+W0 -W3  @SI64TOF48.P23
+W0 -W1  @MULFF.P24
+W0 -W3  @F64TO48.P25
+W0 -W3  @MULS6464.P26
+W0      @SITOF.P27
+W0 -W3  @I64TOF64.P28
+W0 -W3  @F64TOSI64.P29
+W0      @delay_us1.P30
+W0 -W1  @MULS3232.P31
+W0 -W3  @DIVS6464.P32
+W0 -W2  @DIVFF48.P33
+W0      @ITOF.P34
+W0 -W2  @MULFF48.P35
+W0      @delay_ms1.P36
+W1      @SCRATCH
+W1      @READ_PACKED_MEMORY.P1
+W1      @WRITE_PACKED_MEMORY.P2
+W2      @READ_PACKED_MEMORY.P1
+W2 -W3  @ADDFF.P2
+W2 -W3  @FLT.P3
+W2 -W3  @DIV3232B.P4
+W2 -W3  @MULS3232.P5
+W2 -W3  @DIVFF.P6
+W2 -W3  @MUL3232.P7
+W2      @READ_ROM_MEMORY.P8
+W2 -W3  @DIVS3232A.P9
+W2      @WRITE_PACKED_MEMORY.P10
+W2 -W3  @MULFF.P11
+W3      @READ_ROM_MEMORY.P1
+W3 -W5  @FLT48.P2
+W3 -W5  @DIVS4848.P3
+W3 -W5  @ADDFF48.P4
+W3 -W5  @MULS4848.P5
+W3 -W5  @MULFF48.P6
+W3      @READ_PACKED_MEMORY.P7
+W3 -W5  @DIVFF48.P8
+W3      @WRITE_PACKED_MEMORY.P9
+W4 -W7  @ADDFF64.P1
+W4 -W7  @DIVFF64.P2
+W4      @PRINTFD16_115200_5725_5724.P3
+W4 -W7  @FLT64.P4
+W4 -W7  @DIVS6464.P5
+W4 -W7  @MULFF64.P6
+W4 -W7  @MULS6464.P7
+085.4   TX1IF
+630.6   C1OUT
+630.7   C2OUT
+800-801 strtok.save
+802-805 _Randseed
+806-807 __DYNAMIC_HEAD
+808-809 EvQFullCount
+80A-831 pas_64
+832-859 qas_64
+85A-889 pat_64
+88A-8B9 qat_64
+8BA-8BD Kp_x
+8BE-8C1 Kp_y
+8C2-8C5 Ki_x
+8C6-8C9 Ki_y
+8CA-8CD Kd_x
+8CE-8D1 Kd_y
+8D2-8D3 e_x
+8D4-8D5 e_y
+8D6-8D9 int_e_x
+8DA-8DD int_e_y
+8DE-8E1 u_x
+8E2-8E5 u_y
+8E6-8E9 control_x
+8EA-8ED control_y
+8EE-8F1 p_e_x
+8F2-8F5 p_e_y
+8F6-8F9 tor
+8FA-8FB duty1
+8FC-8FF count_pulseX
+900-903 count_pulseY
+904-907 thetaX
+908-90B thetaY
+90C-90D DistanceX
+90E-90F DistanceY
+910-911 target_posX
+912-913 target_posY
+914-915 h
+916-919 current_posX
+91A-91D current_posY
+91E-91F ReadPortB
+920-921 B0
+922-923 B1
+924-925 B2
+926-927 B3
+928-92B radius
+92C-92D home_state
+92E     move_state
+92F.0   Tx1Flag
+92F.1   RDA1.FrameState
+930-931 x
+932-933 y
+934-935 send_end
+936-93F Tx1QCB
+940-9BF Tx1QArray
+9C0-9C1 Tx1BuffPtr
+9C2-9C3 TxBuffIdx
+9C4-9C5 Tx1FrameIn
+9C6-9C7 Tx1FrameOut
+9C8-9C9 Rx1FrameCount
+9CA-9CB RxCount
+9CC-9CD Tx1QFullCount
+9CE-9CF Rx1QFullCount
+9D0-9D1 RxBuffPtr
+9D2-9DB Rx1QCB
+9DC-9EB Rx1BuffPtrArray
+9EC-9ED DestPtrStruct
+9EE-9EF MemFail
+9F0-9F1 MemCount
+9F2-A55 position_x
+A56-AB9 position_y
+ABA-ABB RDA1.FrmIdx
+ABC     main.errCode
+ABD     main.sendTx1Count
+ABE-ABF Q8UXInit.qStructPtr
+ABE-ABF QPtrXInit.qStructPtr
+ABE-ABF create_position_array.c_state
+ABE-ABF QPtrXGet.qStructPtr
+AC0-AC1 Q8UXInit.buffPtr
+AC0-AC1 create_position_array.s_state
+AC0-AC1 QPtrXInit.buffPtr
+AC0-AC1 QPtrXGet.destPtr
+AC2-AC3 Q8UXInit.qL
+AC2-AC3 QPtrXInit.qL
+AC2-AC3 create_position_array.sum_a
+AC2-AC3 QPtrXGet.errPtr
+AC4-AC5 create_position_array.sum_b
+AC6-AC7 create_position_array.sum_c
+AC8-AC9 create_position_array.sum_d
+ACA-ACB create_position_array.pos_r
+ACC-ACD create_position_array.posY
+ACE-ACF create_position_array.posX
+AD0-AD1 create_position_array.Arr_state
+AD2     create_position_array.i
+ADC-ADD strlen.s
+ADE-ADF strlen.sc
+ADE     ConvertStr2Int.num
+AF6     RDA1.Chr
+AF6     TBE1ISR.destChr
+AF7     TBE1ISR.errCode
+AF8-AF9 RDA1.errCode
+AF8-AF9 Q8UXGet.qStructPtr
+AFA-AFB Q8UXGet.destPtr
+AFC-AFD Q8UXGet.errPtr
+B00-B01 free.ptr
+B02-B03 QPtrXPut.qStructPtr
+B02-B03 free.node
+B04-B05 free.nsize
+B04-B05 QPtrXPut.ptrStruct
+B06-B07 QPtrXPut.errPtr
+B08-B09 malloc.size
+B0A-B0B malloc.node
+B0C-B0D malloc.new
+B0C-B0D control_position.axis
+B0E-B11 control_position.target
+B0E-B0F malloc.nsize
+B12-B15 control_position.currentPosition
+B16-B19 control_position.targetX
+B1A-B1D control_position.currentX
+B1E-B21 control_position.targetY
+B1E-B1F traverse.node
+B20-B21 traverse.temp
+B22-B23 traverse.nsize
+B22-B25 control_position.currentY
+B24-B25 traverse.nextsize
+B24-B25 insert_node_after.place
+B26-B27 insert_node_after.node
+B2E-B2F create_node.size
+B30-B31 create_node.ptr
+B32-B33 create_node.result
+B34-B35 remove_node.node
+B36-B37 update_node.node
+B36-B37 remove_node.ptr
+B38-B39 update_node.size
+B52-B53 drive_motor.axis
+B54-B55 drive_motor.direction
+B56-B57 drive_motor.speed
+2780-27FF Stack
+
+ROM Allocation:
+000DFC  @const1849.call
+000E14  @const1853.call
+000E2C  QPtrXPut
+000E96  update_node
+000EA6  remove_node
+000ED4  traverse
+000F52  free
+000F94  create_node
+000FB8  insert_node_after
+000FEC  malloc
+00109E  RDA1
+001154  Q8UXGet
+0011B8  TBE1ISR
+0011FC  drive_motor
+001280  Home
+00132A  Initial_Y_axis
+00135E  Initial_X_axis
+001392  Encoder1_A
+0013D6  Encoder1_B
+00141C  Encoder2_A
+001464  Encoder2_B
+0014AE  @SI64TOF64
+001512  @MULFF64
+001622  @DIVFF64
+00172A  @F64TO48
+00176E  @MULFF
+001832  @DIVFF
+0018FC  Encoder
+001A06  @F64TOI64
+001A5C  @ITOF
+001A96  @ADDFF
+001C40  @SFTOI
+001C6C  @SITOF
+001CB6  @FLT
+001D1E  control_position
+0020A0  Run_Motor
+002212  Run_Motor2
+002234  DisableIntr
+00223E  HardwareInit
+0022F6  GlobalVarInit
+00230A  DynamicMemInit
+002336  QPtrXInit
+002374  Q8UXInit
+0023B2  UARTQueueInit
+0023D4  EnableIntr
+0023DC  QPtrXGet
+002446  strlen
+002468  @PRINTFD16_115200_5725_5724
+00255E  ConvertStr2Int
+002568  create_position_array
+002760  main
+002760  @cinit1
+0028CC  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    C:\Users\Teng_is_happy\Documents\Embeded Project\Final_Project\
+
+Project Files:
+    BITWISE_LIB.c (link)                                    [28-ส.ค.-17 16:22  CRC=C9F547CD]
+    BITWISE_LIB.h                                           [09-ส.ค.-17 17:14  CRC=93B1E71D]
+    CONFIG_PIC24.H                                          [23-พ.ย.-17 13:55  CRC=C1654A97]
+    ..\..\..\..\..\Program Files (x86)\PICC\devices\24FJ48GA002.H [12-พ.ย.-13 14:36  CRC=2B092578]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdlib.h [08-มิ.ย.-11 14:39  CRC=0B6669CF]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\stddef.h [16-ก.ค.-10 09:27  CRC=897CEC6C]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\string.h [14-ก.ค.-11 10:13  CRC=23EDEC8F]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\ctype.h [03-ม.ค.-08 13:55  CRC=2D1F019F]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdio.h [31-ก.ค.-07 13:24  CRC=4E4534F4]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdlibm.h [24-ก.พ.-12 09:58  CRC=9523303D]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\memmgmt.c [24-ก.พ.-12 09:47  CRC=E82E24A3]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdint.h [30-ธ.ค.-08 09:01  CRC=9F7F640F]
+    BL_support.h                                            [05-ม.ค.-17 12:12  CRC=F46A39C9]
+    CDATPIC24.H                                             [25-ก.ค.-17 17:34  CRC=DDB9FE05]
+    CONTROL_PID.c (link)                                    [26-พ.ย.-17 14:09  CRC=780F75D5]
+    CONTROL_PID.h                                           [23-พ.ย.-17 13:55  CRC=2DF3F3CA]
+    EVENT_DRIVEN_CCS.H                                      [23-พ.ย.-17 13:55  CRC=D110205B]
+    EVENT_TYPE_CCS.H                                        [23-พ.ย.-17 13:55  CRC=AE2C727E]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\math.h  [28-ก.ย.-12 11:35  CRC=546412C9]
+    EVENT_DRIVEN_CCS.c (link)                               [23-พ.ย.-17 13:55  CRC=417CD95A]
+
+Source signature=69DDCB08
+
+Units:
+    C:\Users\Teng_is_happy\Documents\Embeded Project\Final_Project\BITWISE_LIB.o
+    C:\Users\Teng_is_happy\Documents\Embeded Project\Final_Project\CONTROL_PID.o
+    C:\Users\Teng_is_happy\Documents\Embeded Project\Final_Project\EVENT_DRIVEN_CCS.o
+
+Compiler Settings:
+    Processor:      PIC24FJ48GA002
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: SIGNED: 8,16,32
+    Float,Double:   32,64
+    Case Sensitive: Yes
+
+Output Files:
+    Errors:      FINAL.err
+    INHX8:       FINAL.hex
+    Symbols:     FINAL.sym
+    List:        FINAL.lst
+    Debug/COFF:  FINAL.cof
+    Project:     FINAL.ccspjt
+    Call Tree:   FINAL.tre
+    Statistics:  FINAL.STA
