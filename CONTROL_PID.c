@@ -487,10 +487,7 @@ static void create_position_array(void)
 {
     int16u c_state = 0;
     int16u s_state = 0;
-    int16u sum_a = 0; 
-    int16u sum_b = 0;
-    int16u sum_c = 0;
-	int16u sum_d = 0;
+    char numberic[5];
     int16u pos_r = 0;
     int *posY;
     int *posX;
@@ -510,10 +507,10 @@ static void create_position_array(void)
             if(c_state == 1)
             {
                 //Found x
-                if(s_state==1){pos_r = sum_a;}
-                if(s_state==2){pos_r = sum_a*10+sum_b;}
-                if(s_state==3){pos_r = sum_a*100+sum_b*10+sum_c;}
-				if(s_state==4){pos_r = sum_a*1000+sum_b*100+sum_c*10+sum_d;}
+                for(int8u i = 0; i < strlen(numberic); i++)
+                {
+                	pos_r = pos_r*10 + numberic[i];
+                }
                 printf("\r\n x == %d", pos_r);
 				DistanceX = pos_r/10;
                 *(posX+Arr_state) = pos_r;
@@ -524,10 +521,10 @@ static void create_position_array(void)
         else if(DestPtrStruct.blockPtr[i] == CONDITION_E)
         {
             //Found y
-            if(s_state==1){pos_r = sum_a;}
-            if(s_state==2){pos_r = sum_a*10+sum_b;}
-            if(s_state==3){pos_r = sum_a*100+sum_b*10+sum_c;}
-			if(s_state==4){pos_r = sum_a*1000+sum_b*100+sum_c*10+sum_d;}
+            for(int8u i = 0; i < strlen(numberic); i++)
+            {
+               	pos_r = pos_r*10 + numberic[i];
+            }
             printf("\r\n y == %d", pos_r);
 			DistanceY = pos_r/10;
             *(posY+Arr_state) = pos_r;
@@ -542,9 +539,7 @@ static void create_position_array(void)
         {
             //Found numeric
             //printf("\r\nDestPtrStruct.blockPtr[i] = %c", DestPtrStruct.blockPtr[i]);
-            if(s_state == 0){sum_a = ConvertStr2Int(DestPtrStruct.blockPtr[i]);}
-            if(s_state == 1){sum_b = ConvertStr2Int(DestPtrStruct.blockPtr[i]);}
-            if(s_state == 2){sum_c = ConvertStr2Int(DestPtrStruct.blockPtr[i]);}
+        	numberic[s_state] = ConvertStr2Int(DestPtrStruct.blockPtr[i]);
             s_state++;
         }
     }
